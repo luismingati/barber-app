@@ -1,4 +1,4 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { authOptions } from '@/lib/auth';
 import BarbershopInfo from '@/components/Barbershop-info';
 import ServiceItem from '@/components/Service-item';
 import { db } from '@/lib/prisma';

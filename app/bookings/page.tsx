@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import { getServerSession } from 'next-auth';
 import React from 'react';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+import { authOptions } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 import { db } from '@/lib/prisma';
 import BookingItem from '@/components/Booking-item';
