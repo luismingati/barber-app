@@ -7,7 +7,7 @@ import { Barbershop } from "@prisma/client";
 import { format } from 'date-fns';
 import { ptBR } from "date-fns/locale";
 import { getServerSession } from "next-auth";
-import { authOptions } from "./api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
